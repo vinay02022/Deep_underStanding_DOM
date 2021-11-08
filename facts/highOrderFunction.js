@@ -16,10 +16,11 @@ let myDocument=cheerio.load(htmlKaData);//padhte hue kaaand karo
 let bothBowingTables=myDocument(".table.bowler");
 fs.writeFileSync(".bowlingtables.html",bothBowingTables+"");
 lenTab=bothBowingTables.length
-for(let i=0;i<lenTab;i++){
+console.log(bothBowingTables)
+/*for(let i=0;i<lenTab;i++){
     let bowingtable=myDocument(bothBowingTables[i])
-    
+    console.log(bowingtable);
 
-}
+}*/
 
 
