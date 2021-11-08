@@ -1,6 +1,6 @@
+let request=require("request")
 const fs=require("fs");
 const cheerio=require("cheerio");
-const { html } = require("cheerio/lib/api/manipulation");
 let htmlKaData=fs.readFileSync("./index.html","utf8");
 //ab load karo cheerio me jispe "Document " type kaam chahye
 let myDocument=cheerio.load(htmlKaData);//html file loaded in cheerio AB KAAND KARO
